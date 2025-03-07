@@ -56,7 +56,7 @@ export default function Create({ auth, project }) {
                             </div>
                             <div className="mt-4">
                                 <InputLabel htmlFor="project_description" value="Project Description" />
-                                <TextAreaInput id="project_description" name="description" value={data.description} className="mt-1 block w-full" isFocused={true} onChange={e => setData('description', e.target.value)} />
+                                <TextAreaInput id="project_description" name="description" value={data.description} className="mt-1 block w-full" onChange={e => setData('description', e.target.value)} />
                                 <InputError message={errors.description} className="mt-2" />
                             </div>
                             <div className="mt-4">
