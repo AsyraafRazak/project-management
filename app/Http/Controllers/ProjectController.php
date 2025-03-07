@@ -93,6 +93,7 @@ class ProjectController extends Controller
             'project'=> new ProjectResource($project),
             "tasks" => TaskResource::collection($tasks),
             'queryParams' => request()->query() ?: null,
+            'success' => session('success'),
         ]);
     }
 
